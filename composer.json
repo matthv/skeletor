@@ -1,0 +1,36 @@
+{
+    "name": "matthv/skeletor",
+    "description": "A little admin skeleton for laravel 5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthieu Videaud",
+            "email": "matthv@gmail.com",
+            "homepage": "https://www.matthieuvideaud.fr"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.6.0",
+        "kris/laravel-form-builder": "^1.15",
+        "nicolaslopezj/searchable": "1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "orchestra/testbench": "~3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Matthv\\Skeletor\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Matthv\\Skeletor\\SkeletorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
