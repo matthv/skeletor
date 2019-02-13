@@ -4,6 +4,7 @@ namespace Matthv\Skeletor\App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\View;
 use Kris\LaravelFormBuilder\FormBuilder;
 use Matthv\Skeletor\App\Forms\AccountForm;
@@ -22,11 +23,15 @@ class AccountController extends CRUDController
 		$form = $this->getForm($admin);
 		$buttons = $this->buttons;
 
-		if ($request->isMethod('post')) {
-			$form->redirectIfNotValid();
-			$admin->update($form->getFieldValues());
-			return redirect()->route('admin.account')->with('success',  __('skeletor::skeletor.messages.account_updated'));
-		}
+        if ($request->isMethod('post')) {
+            $form->redirectIfNotValid();
+            $formRequest = $form->getFieldValues();
+            if (array_key_exists('password', $formRequest)) {
+                $formRequest['password'] = Hash::make($formRequest['password']);
+            }
+            $admin->update($formRequest);
+            return redirect()->route('admin.account')->with('success',  __('skeletor::skeletor.messages.account_updated'));
+        }
 		$model = $form->getModel();
 		return view('skeletor::admin.account.index', compact('form', 'buttons', 'model'));
     }
