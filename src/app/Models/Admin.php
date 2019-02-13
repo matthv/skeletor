@@ -66,13 +66,6 @@ class Admin extends Authenticatable
 	}
 
 	/**
-	 * @param $value
-	 */
-	public function setPasswordAttribute($value) {
-    	if ($value != '') $this->attributes['password'] = Hash::make($value);
-	}
-
-	/**
 	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	 */
 	public function roles(): BelongsToMany {
