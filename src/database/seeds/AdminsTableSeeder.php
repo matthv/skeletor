@@ -28,7 +28,7 @@ class AdminsTableSeeder extends Seeder
 		$admin = new \Matthv\Skeletor\App\Models\Admin();
 		$admin->name 	= 'Admin';
 		$admin->email 	= 'admin@skeletor.com';
-		$admin->password = 'admin';
+        $admin->password = bcrypt('admin');
 		$admin->save();
 		$admin->roles()->attach([$role_superadmin->id, $role_admin->id]);
 	}
