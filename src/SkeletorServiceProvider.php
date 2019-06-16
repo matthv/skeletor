@@ -36,8 +36,8 @@ class SkeletorServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'skeletor');
 
 		$this->publishes([__DIR__ . '/config/config.php' => config_path('skeletor.php')], 'config');
-        $this->publishes([__DIR__ . '/resources/lang' => resource_path('lang/vendor/skeletor')], 'lang');
-		$this->publishes([__DIR__ . '/resources/views' => resource_path('views/vendor/skeletor')], 'views');
+        $this->publishes([__DIR__ . '/resources/lang' => resource_path('lang')], 'lang');
+        $this->publishes([__DIR__ . '/resources/views' => resource_path('views/vendor/skeletor')], 'views');
         $this->publishes([__DIR__ . '/public' => public_path('vendor/skeletor')], 'public');
 		$this->publishes([__DIR__ . '/routes/custom.php' => base_path() . $this->custom_route_file_published], 'custom_routes');
 
