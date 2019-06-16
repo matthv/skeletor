@@ -15,3 +15,8 @@
 ### 1.0.3 (May 23, 2019)
 
 - Fix import google font
+
+### 1.0.3 (June 16, 2019)
+
+- Fix reset password i18n
+- Fix provider : path lang publish
