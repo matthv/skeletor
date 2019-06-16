@@ -57,10 +57,10 @@ class ResetPassword extends Notification
 		}
 
 		return (new MailMessage)
-				->subject(__('validation.email.reset.subject'))
-				->line(__('validation.email.reset.line1'))
-				->action(__('validation.attributes.reset-password'), url(config('app.url').route('skeletor.auth.password.reset.token', $this->token, false)))
-				->line(__('validation.email.reset.line2'));
+            ->subject(__('skeletor.email.reset.subject'))
+            ->line(__('skeletor.email.reset.line1'))
+            ->action(__('skeletor.email.reset.password'), url(config('app.url').route('skeletor.auth.password.reset.token', $this->token, false)))
+            ->line(__('skeletor.email.reset.line2'));
 	}
 
 	/**
