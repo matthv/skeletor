@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "illuminate/support": "^5.6.0",
+        "illuminate/support": "^5.6 || ^6.0",
         "kris/laravel-form-builder": "^1.15",
         "nicolaslopezj/searchable": "1.*"
     },
