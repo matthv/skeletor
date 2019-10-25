@@ -16,7 +16,11 @@
 
 - Fix import google font
 
-### 1.0.3 (June 16, 2019)
+### 1.0.4 (June 16, 2019)
 
 - Fix reset password i18n
 - Fix provider : path lang publish
+
+### 1.0.5 (October 25, 2019)
+
+- composer update illuminate/support version
