@@ -1,10 +1,10 @@
 <?php
 
-namespace Matthv\Skeletor\App\Traits;
+namespace Matthv\Skeletor\Traits;
 
 
-use Matthv\Skeletor\App\Utils\Filter;
-use Matthv\Skeletor\App\Utils\FiltersCollection;
+use Matthv\Skeletor\Utils\Filter;
+use Matthv\Skeletor\Utils\FiltersCollection;
 
 trait Filters {
 

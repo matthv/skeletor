@@ -1,6 +1,6 @@
 <?php
 
-namespace Matthv\Skeletor\App\Http\Middleware;
+namespace Matthv\Skeletor\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

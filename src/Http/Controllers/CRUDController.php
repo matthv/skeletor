@@ -1,10 +1,10 @@
 <?php
 
-namespace Matthv\Skeletor\App\Http\Controllers;
+namespace Matthv\Skeletor\Http\Controllers;
 
-use Matthv\Skeletor\App\Traits\Filters;
-use Matthv\Skeletor\App\Traits\HasMany;
-use Matthv\Skeletor\App\Traits\Query;
+use Matthv\Skeletor\Traits\Filters;
+use Matthv\Skeletor\Traits\HasMany;
+use Matthv\Skeletor\Traits\Query;
 use Illuminate\Support\Facades\View;
 use Kris\LaravelFormBuilder\FormBuilder;
 use Illuminate\Routing\Controller as Controller;

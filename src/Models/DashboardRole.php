@@ -1,6 +1,6 @@
 <?php
 
-namespace Matthv\Skeletor\App\Models;
+namespace Matthv\Skeletor\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

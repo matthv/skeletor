@@ -1,6 +1,6 @@
 <?php
 
-namespace Matthv\Skeletor\App\Traits;
+namespace Matthv\Skeletor\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 
