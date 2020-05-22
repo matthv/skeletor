@@ -1,6 +1,6 @@
 <?php
 
-namespace Matthv\Skeletor\App\Http\Controllers\Auth;
+namespace Matthv\Skeletor\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;

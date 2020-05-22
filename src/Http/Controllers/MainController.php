@@ -1,6 +1,6 @@
 <?php
 
-namespace Matthv\Skeletor\App\Http\Controllers;
+namespace Matthv\Skeletor\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Auth;

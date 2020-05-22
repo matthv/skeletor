@@ -11,7 +11,7 @@ return [
     'providers' => [
         'admins' => [
             'driver' => 'eloquent',
-            'model' => \Matthv\Skeletor\App\Models\Admin::class,
+            'model' => \Matthv\Skeletor\Models\Admin::class,
         ],
     ],
 

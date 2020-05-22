@@ -1,6 +1,6 @@
 <?php
 
-namespace Matthv\Skeletor\App\Notifications;
+namespace Matthv\Skeletor\Notifications;
 
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Notifications\Notification;

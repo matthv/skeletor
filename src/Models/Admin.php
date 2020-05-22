@@ -1,13 +1,13 @@
 <?php
 
-namespace Matthv\Skeletor\App\Models;
+namespace Matthv\Skeletor\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Hash;
-use Matthv\Skeletor\App\Notifications\ResetPassword;
+use Matthv\Skeletor\Notifications\ResetPassword;
 
 class Admin extends Authenticatable
 {

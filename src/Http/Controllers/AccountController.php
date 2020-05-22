@@ -1,14 +1,14 @@
 <?php
 
-namespace Matthv\Skeletor\App\Http\Controllers;
+namespace Matthv\Skeletor\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\View;
 use Kris\LaravelFormBuilder\FormBuilder;
-use Matthv\Skeletor\App\Forms\AccountForm;
-use Matthv\Skeletor\App\Models\Admin;
+use Matthv\Skeletor\Forms\AccountForm;
+use Matthv\Skeletor\Models\Admin;
 
 class AccountController extends CRUDController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Matthv\Skeletor\App\Utils;
+namespace Matthv\Skeletor\Utils;
 
 class Filter {
 

@@ -24,3 +24,8 @@
 ### 1.0.5 (October 25, 2019)
 
 - composer update illuminate/support version
+
+### 1.0.6 (May 22, 2020)
+
+- composer update illuminate/support version
+- fix PSR-4

@@ -1,7 +1,7 @@
 <?php
 
 Route::group([
-	'namespace'  => 'Matthv\Skeletor\App\Http\Controllers',
+	'namespace'  => 'Matthv\Skeletor\Http\Controllers',
 	'middleware' => 'web',
 	'prefix'     => config('skeletor.route_prefix'),
 ],
@@ -18,7 +18,7 @@ function () {
 	Route::get('/dashboard', 'MainController@dashboard')->name('skeletor.admin.dashboard')->middleware(config('skeletor.middleware_auth'));
 });
 
-Route::namespace('Matthv\Skeletor\App\Http\Controllers')
+Route::namespace('Matthv\Skeletor\Http\Controllers')
 		->prefix(config('skeletor.route_prefix'))
 		->name(config('skeletor.route_prefix') . '.')
 		->middleware('web', config('skeletor.middleware_auth'))

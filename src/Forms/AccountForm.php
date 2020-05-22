@@ -1,6 +1,6 @@
 <?php
 
-namespace Matthv\Skeletor\App\Forms;
+namespace Matthv\Skeletor\Forms;
 
 use Illuminate\Validation\Rules\Unique;
 use Kris\LaravelFormBuilder\Form;

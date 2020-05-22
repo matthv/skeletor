@@ -1,10 +1,10 @@
 <?php
 
-namespace Matthv\Skeletor\App\Utils;
+namespace Matthv\Skeletor\Utils;
 
 /**
  * Class FiltersCollection
- * @package Matthv\Skeletor\App\Traits
+ * @package Matthv\Skeletor\Traits
  */
 class FiltersCollection extends \Illuminate\Support\Collection
 {
