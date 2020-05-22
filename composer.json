@@ -10,14 +10,13 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "illuminate/support": "^5.6 || ^6.0",
+        "php": ">=7.2",
+        "illuminate/support": "^5.6|^6|^7",
         "kris/laravel-form-builder": "^1.15",
         "nicolaslopezj/searchable": "1.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "~5.0",
-        "orchestra/testbench": "~3.4"
+        "orchestra/testbench": "^3|^4|^5"
     },
     "autoload": {
         "psr-4": {
