@@ -10,14 +10,14 @@ A light admin skeleton for Laravel 5.
 # Installation
 
 ```
-composer require 'matthv/skeletor' '~0.1'
+composer require 'matthv/skeletor'
 ```
 That's all, thanks Laravel auto discovery !
 
 
 # Requirements
 
-- Laravel 5.6+
+- Laravel >=7
 
 # Configuration
 
