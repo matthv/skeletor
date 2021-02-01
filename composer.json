@@ -10,9 +10,9 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
-        "illuminate/support": "^5.6|^6|^7",
-        "kris/laravel-form-builder": "^1.15",
+        "php": ">=7.3",
+        "illuminate/support": "^7|^8",
+        "kris/laravel-form-builder": "^1.4",
         "nicolaslopezj/searchable": "1.*"
     },
     "require-dev": {
