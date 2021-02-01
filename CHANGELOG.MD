@@ -29,3 +29,8 @@
 
 - composer update illuminate/support version
 - fix PSR-4
+
+### 2.0.0 (February 1, 2021)
+
+- composer update illuminate/support version
+- update flow of git
