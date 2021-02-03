@@ -12,16 +12,17 @@ use Matthv\Skeletor\Models\Admin;
 
 class AccountController extends CRUDController
 {
-	protected $model = Admin::class;
+    protected $model = Admin::class;
 
-	protected $icon = 'fas fa-user';
+    protected $icon = 'fas fa-user';
 
-	protected $form = AccountForm::class;
+    protected $form = AccountForm::class;
 
-    public function profile(Request $request) {
-		$admin = Auth::guard('admin')->user();
-		$form = $this->getForm($admin);
-		$buttons = $this->buttons;
+    public function profile(Request $request)
+    {
+        $admin = Auth::guard('admin')->user();
+        $form = $this->getForm($admin);
+        $buttons = $this->buttons;
 
         if ($request->isMethod('post')) {
             $form->redirectIfNotValid();
@@ -30,31 +31,34 @@ class AccountController extends CRUDController
                 $formRequest['password'] = Hash::make($formRequest['password']);
             }
             $admin->update($formRequest);
-            return redirect()->route('admin.account')->with('success',  __('skeletor::skeletor.messages.account_updated'));
+            return redirect()->route('admin.account')->with('success', __('skeletor::skeletor.messages.account_updated'));
         }
-		$model = $form->getModel();
-		return view('skeletor::admin.account.index', compact('form', 'buttons', 'model'));
+        $model = $form->getModel();
+        return view('skeletor::admin.account.index', compact('form', 'buttons', 'model'));
     }
 
-	/**
-	 * @param null $admin
-	 * @return AccountForm
-	 */
-	public function getForm($admin = null): AccountForm {
-		return $this->formBuilder->create(AccountForm::class, [
-			'model' => $admin
-		]);
-	}
+    /**
+     * @param null $admin
+     *
+     * @return AccountForm
+     */
+    public function getForm($admin = null): AccountForm
+    {
+        return $this->formBuilder->create(AccountForm::class, [
+            'model' => $admin,
+        ]);
+    }
 
     /**
      *
      * @return array
      */
-    public function setButtons(): array {
+    public function setButtons(): array
+    {
         return $this->buttons = [
-            'save_and_edit'	=>	[
-                'icons' => 	['fa-save'],
-                'label'	=>	 __('skeletor::skeletor.buttons.save'),
+            'save_and_edit' => [
+                'icons' => ['fa-save'],
+                'label' => __('skeletor::skeletor.buttons.save'),
             ],
         ];
     }

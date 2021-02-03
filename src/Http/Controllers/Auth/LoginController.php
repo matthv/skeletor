@@ -3,7 +3,9 @@
 namespace Matthv\Skeletor\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
@@ -42,7 +44,7 @@ class LoginController extends Controller
 	/**
 	 * Show the application dashboard login form.
 	 *
-	 * @return \Illuminate\Http\Response
+	 * @return Response
 	 */
 	public function showLoginForm()
 	{
@@ -52,7 +54,7 @@ class LoginController extends Controller
 	/**
 	 * Get the guard to be used during authentication.
 	 *
-	 * @return \Illuminate\Contracts\Auth\StatefulGuard
+	 * @return StatefulGuard
 	 */
 	protected function guard()
 	{

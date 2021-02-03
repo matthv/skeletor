@@ -3,7 +3,9 @@
 namespace Matthv\Skeletor\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Password;
 
 class ForgotPasswordController extends Controller
@@ -34,7 +36,7 @@ class ForgotPasswordController extends Controller
 	/**
 	 * Display the form to request a password reset link.
 	 *
-	 * @return \Illuminate\Http\Response
+	 * @return Response
 	 */
 	public function showLinkRequestForm()
 	{
@@ -44,7 +46,7 @@ class ForgotPasswordController extends Controller
 	/**
 	 * Get the broker to be used during password reset.
 	 *
-	 * @return \Illuminate\Contracts\Auth\PasswordBroker
+	 * @return PasswordBroker
 	 */
 	public function broker()
 	{

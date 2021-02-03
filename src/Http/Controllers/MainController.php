@@ -2,13 +2,15 @@
 
 namespace Matthv\Skeletor\Http\Controllers;
 
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\View\View;
 
 class MainController extends BaseController {
 
 	/**
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 * @return Factory|View
 	 */
     public function index() {
 		if (Auth::guard(config('skeletor.middleware_auth'))->check()) {
@@ -18,7 +20,7 @@ class MainController extends BaseController {
     }
 
 	/**
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 * @return Factory|View
 	 */
 	public function dashboard() {
 		return view('skeletor::admin.index');
