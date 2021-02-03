@@ -51,9 +51,6 @@ class Admin extends Authenticatable
         'password', 'remember_token',
     ];
 
-	protected $with = ['roles'];
-
-
 	/**
 	 * Send the password reset notification.
 	 *
@@ -64,20 +61,4 @@ class Admin extends Authenticatable
 	{
 		$this->notify(new ResetPassword($token));
 	}
-
-	/**
-	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-	 */
-	public function roles(): BelongsToMany {
-		return $this->belongsToMany(DashboardRole::class)->withTimestamps();
-	}
-
-	/**
-	 * @param string $role
-	 * @return bool
-	 */
-	public function hasRole(string $role) {
-		return null !== $this->roles()->where('name', $role)->first();
-	}
-
 }
