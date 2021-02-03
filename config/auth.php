@@ -3,7 +3,7 @@
 return [
     'guards' => [
         'admin' => [
-            'driver' => 'session',
+            'driver'   => 'session',
             'provider' => 'admins',
         ],
     ],
@@ -11,15 +11,15 @@ return [
     'providers' => [
         'admins' => [
             'driver' => 'eloquent',
-            'model' => \Matthv\Skeletor\Models\Admin::class,
+            'model'  => \Matthv\Skeletor\Models\Admin::class,
         ],
     ],
 
     'passwords' => [
         'admins' => [
             'provider' => 'admins',
-            'table' => 'admin_password_resets',
-            'expire' => 60,
+            'table'    => 'admin_password_resets',
+            'expire'   => 60,
         ],
     ],
 ];
