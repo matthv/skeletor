@@ -34,3 +34,8 @@
 
 - composer update illuminate/support version
 - update flow of git
+
+### 2.1.0 (February 3, 2021)
+
+- composer update 
+- refactor
