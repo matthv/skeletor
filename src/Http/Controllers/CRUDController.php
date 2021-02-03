@@ -11,6 +11,7 @@ use Matthv\Skeletor\Traits\HasMany;
 use Matthv\Skeletor\Traits\Query;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
+use Illuminate\Routing\Controller;
 use Kris\LaravelFormBuilder\FormBuilder;
 
 class CRUDController extends Controller
